@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#166534" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0b0f19" />
+  
+  <!-- Subtle Grid -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+  </g>
+
+  <!-- Glow effect -->
+  <circle cx="400" cy="300" r="300" fill="url(#glow)" />
+
+  <!-- Glowing Leaf -->
+  <g transform="translate(180, 80)">
+    <!-- Leaf Base -->
+    <path d="M 200 400 C 50 350, 0 200, 50 100 C 100 50, 250 50, 350 150 C 400 250, 450 350, 200 400 Z" fill="#14532d" stroke="#22c55e" stroke-width="3" opacity="0.9"/>
+    <!-- Stem & Veins -->
+    <path d="M 200 400 L 250 150 M 230 300 L 120 250 M 240 230 L 150 150 M 245 220 L 320 180 M 225 320 L 340 310" stroke="#4ade80" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Bounding Box indicating "Disease Detection" -->
+  <g transform="translate(230, 200)">
+    <rect width="140" height="140" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="4" stroke-dasharray="10 5"/>
+    <text x="10" y="-10" fill="#ef4444" font-family="monospace" font-size="22" font-weight="bold">BLIGHT: 98.4%</text>
+    <!-- Crosshairs -->
+    <path d="M 70 50 L 70 90 M 50 70 L 90 70" stroke="#ef4444" stroke-width="2"/>
+    <rect x="-4" y="-4" width="8" height="8" fill="#ef4444" />
+    <rect x="136" y="-4" width="8" height="8" fill="#ef4444" />
+    <rect x="-4" y="136" width="8" height="8" fill="#ef4444" />
+    <rect x="136" y="136" width="8" height="8" fill="#ef4444" />
+  </g>
+  
+  <g transform="translate(380, 420)">
+    <rect width="120" height="120" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="4" stroke-dasharray="10 5"/>
+    <text x="10" y="-10" fill="#22c55e" font-family="monospace" font-size="22" font-weight="bold">HEALTHY: 99%</text>
+    <rect x="-4" y="-4" width="8" height="8" fill="#22c55e" />
+    <rect x="116" y="-4" width="8" height="8" fill="#22c55e" />
+    <rect x="-4" y="116" width="8" height="8" fill="#22c55e" />
+    <rect x="116" y="116" width="8" height="8" fill="#22c55e" />
+  </g>
+
+  <!-- Floating UI elements -->
+  <rect x="50" y="50" width="220" height="100" rx="10" fill="#1e293b" opacity="0.95" stroke="#334155" stroke-width="2"/>
+  <text x="70" y="85" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="bold" font-size="16">VISION MODEL v2.4</text>
+  <text x="70" y="120" fill="#22c55e" font-family="monospace" font-weight="bold" font-size="20">● LIVE SCANNING</text>
+
+  <rect x="550" y="450" width="200" height="100" rx="10" fill="#1e293b" opacity="0.95" stroke="#334155" stroke-width="2"/>
+  <text x="570" y="485" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="bold" font-size="14">ANOMALIES FOUND</text>
+  <text x="570" y="525" fill="#ef4444" font-family="monospace" font-weight="bold" font-size="32">01</text>
+</svg>
