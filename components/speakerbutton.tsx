@@ -4,11 +4,9 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const profileText = `
-Hi, I'm Akarsh Jain, a software engineer passionate about building scalable web applications, mobile solutions, and AI-powered systems. 
-With over 4 years of experience in full-stack development, I specialize in Next.js, Node.js, React, and modern cloud architectures. 
-I have completed more than 25 projects for over 50 happy clients. 
-My technical expertise includes Frontend development with React and TypeScript, Backend with Node.js and PostgreSQL, and Cloud DevOps with AWS and Docker. 
-I'm also specialized in AI and Data, working with Gemini API, LLMs, and Machine Learning. 
+Hi, I'm Akarsh Jain. I'm a software engineer passionate about building scalable web applications, mobile solutions, and AI-powered systems.
+I love building things that actually work and solve real problems, spending my time writing code, designing systems, and making applications faster and smarter.
+Apart from coding and development, I love playing cricket, working on new projects, making new friends, and exploring the world.
 I'm based in India and open to remote and global opportunities.
 `;
 
