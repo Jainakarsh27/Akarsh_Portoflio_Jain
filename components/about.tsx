@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
-// export default function About() {
-//   const stats = [
-//     { label: "Projects Completed", value: "10+" },
-//     // { label: "Years Experience", value: "1" },
-//     { label: "Happy Clients", value: "10+" },
-//   ];
+export default function About() {
+  const stats = [
+    { label: "Projects Completed", value: "10+" },
+    // { label: "Years Experience", value: "1" },
+    { label: "Happy Clients", value: "10+" },
+  ];
 
   return (
     <SectionWrapper
