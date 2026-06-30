@@ -5,6 +5,15 @@ import { motion } from "framer-motion";
 
 const certifications = [
   {
+    title: "Software Development Internship Certificate",
+    issuer: "Femira (by Meraji)",
+    date: "March 2026",
+    credentialId: "FEMIRA-SDI-2026",
+    url: "https://github.com/Jainakarsh27/Femira-Internship-records/blob/main/Akarsh%2022BET10008%20Internship%20Completion%20Certificate.pdf",
+    logo: "https://img.icons8.com/fluency/96/code.png",
+    logoBg: "bg-gradient-to-br from-neutral-900 to-red-950",
+  },
+  {
     title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
     date: "January 15, 2026",
