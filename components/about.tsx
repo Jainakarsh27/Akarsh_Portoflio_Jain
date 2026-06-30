@@ -6,12 +6,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function About() {
-  const stats = [
-    { label: "Projects Completed", value: "10+" },
-    // { label: "Years Experience", value: "1" },
-    { label: "Happy Clients", value: "10+" },
-  ];
-
   return (
     <SectionWrapper
       id="about"
@@ -19,7 +13,7 @@ export default function About() {
       subtitle="Building scalable systems & creating innovative solutions"
     >
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-        {/* Left Side: Text and Stats */}
+        {/* Left Side: Text */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -45,25 +39,6 @@ export default function About() {
                 <li className="flex items-center gap-2"><span className="text-red-500">📍</span> Based in India</li>
               </ul>
             </div>
-          </div>
-
-          {/* Stats Row */}
-          <div className="grid grid-cols-3 gap-4 pt-4 border-t border-neutral-800/50">
-            {stats.map((stat, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center md:text-left"
-              >
-                <div className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300 mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-xs text-neutral-500 uppercase tracking-wider font-semibold">{stat.label}</div>
-              </motion.div>
-            ))}
           </div>
         </motion.div>
 
