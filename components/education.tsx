@@ -16,7 +16,6 @@ const educationData = [
       "System Design & Architecture",
       "Database Management Systems",
       "Operating Systems",
-      "Machine Learning",
       "AI Integration",
       "Cloud Computing",
       "Team Management",
