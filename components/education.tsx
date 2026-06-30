@@ -13,7 +13,6 @@ const educationData = [
       "Specialized in Data Structures, Algorithms, System Design, DBMS, Operating Systems, and Cloud Computing Architecture.",
     courses: [
       "Advanced Data Structures",
-      "System Design & Architecture",
       "Database Management Systems",
       "Operating Systems",
       "AI Integration",
